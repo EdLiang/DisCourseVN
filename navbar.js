@@ -1,10 +1,12 @@
+$(document).ready( function() {
+    "use strict";
 
-//jQuery(document).ready(function(){
+    let navbar = "";
+    $.get('navbar.html', function(data) {
+        navbar = data;
+        console.log(navbar);
+        document.getElementById("navbar").innerHTML = navbar;
 
-    jQuery('#navbar').load('navbar.html', function () {
-        console.log("Load was performed");
-    }, function () {
-        console.log("Error detected");
-    })
-
-//});
+    }, 'text');
+ 
+});
