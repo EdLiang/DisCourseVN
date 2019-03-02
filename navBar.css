@@ -90,8 +90,7 @@ nav {
     nav a {
         color: white;
         text-decoration: none;
-        font-size: 0.9rem;
-        font-weight: bold;
+        font-size: 1.2rem;
         text-transform: uppercase;
         opacity: 0;
         transition: opacity 150ms ease-in-out;
