@@ -1,4 +1,4 @@
-$(document).ready( function() {
+$(document).ready(function () {
     "use strict";
 
     let navbar = "";
@@ -15,3 +15,9 @@ $(document).ready( function() {
     }, 'text');
  
 });
+
+let elements = document.getElementsByClassName("navAnchors");
+for (let i = 0; i < elements.length; i++) {
+    let cs = window.getComputedStyle(elements[i]);
+    let actualSize = Number.parseFloat(cs.fontSize) * detectZoom.zoom();
+}
