@@ -8,10 +8,9 @@ $(document).ready( function() {
         document.getElementById("navbar").innerHTML = navbar;
 
         let filename = document.location.pathname.match(/[^\/]+$/)[0];
-        filename = "nav_" + filename;
-        console.log(filename);
+        let navHeaderId = "nav_" + filename;
 
-        
+        document.getElementById(navHeaderId).classList.add("SelectedLink")
 
     }, 'text');
  
