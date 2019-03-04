@@ -121,6 +121,8 @@ nav {
 
     .logo {
         grid-column: 2 / 3;
+        padding: 0.5em;
+        margin-left: 10em;
     }
 
     nav {
