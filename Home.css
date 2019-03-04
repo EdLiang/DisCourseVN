@@ -168,7 +168,7 @@ nav {
 @media screen and (min-width: 800px) {
 
     #homeOfHomes {
-        background-color: #e8d8fc;
+        background: url("https://res.cloudinary.com/dyjbpwees/image/upload/v1551668890/htmlBackground2.png");
     }
 
     #homeContainer {
@@ -246,12 +246,20 @@ nav {
     }
 
         #letterToPlayer h1 {
-            font-size: 2em;
+            font-size: 1.7em;
         }
 
         #letterToPlayer p {
             font-size: 1.5em;
+            margin-bottom: 0;
+            margin-top: 0;
         }
+
+    #letterIllicitness {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
 
     .whiteBarContainer {
         padding-top: 10px;
@@ -284,7 +292,7 @@ nav {
     }
 
         #clickables p {
-            color: white;
+            color: #222;
             margin: 1em;
             font-family: cambria;
             font-weight: bold;
@@ -297,6 +305,12 @@ nav {
         width: 50%;
     }
 
+        #download #warning {
+            padding-left: 0.5em;
+            color: #222;
+            font-size: 2em;
+        }
+
     #downloadButton {
         position: relative;
         max-width: 50%;
@@ -305,7 +319,7 @@ nav {
     }
 
     #downloadBlank {
-        height: 4px;
+        height: 2px;
         max-width: 50%;
         border-radius: 50px;
         margin-top: 1em;
@@ -324,9 +338,48 @@ nav {
 
     #screenshots {
         width: 100%;
+        max-wdith: 100%;
+        height: auto;
         margin: auto;
+        padding: 0;
         background-color: var(--background);
     }
+
+        #screenshots h1 {
+            margin: 0;
+            text-align: center;
+            font-family: Script MT;
+            color: white;
+            font-size: 4em;
+        }
+
+        #screenshots h2 {
+            margin: 0;
+            text-align: center;
+            font-family: cambria;
+            color: white;
+            font-weight: normal;
+            font-size: 1.5em;
+            padding-bottom: 0.5em;
+        }
+
+        #screenshots a {
+            text-decoration: inherit;
+            color: #dddddd;
+            font-weight: bold;
+        }
+
+            #screenshots a:hover {
+                color: #666;
+            }
+
+        #screenshots img {
+            width: 33.3333%;
+            margin: -1.5px;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            padding: 0;
+        }
 
     #finalMessage {
         width: 100%;
@@ -334,11 +387,13 @@ nav {
     }
 
         #finalMessage h2 {
+            color: #444;
             text-align: center;
             margin: 5px;
         }
 
         #finalMessage h3 {
+            color: #444;
             text-align: center;
             margin: 5px;
         }
