@@ -23,7 +23,6 @@ header {
 .logo {
     width: 15em;
     padding: 0.5em;
-    margin-left: 10em;
 }
 
 .toggle-nav {
@@ -368,6 +367,7 @@ nav {
             text-decoration: inherit;
             color: #dddddd;
             font-weight: bold;
+            transition: 0.4s;
         }
 
             #screenshots a:hover {
@@ -380,7 +380,13 @@ nav {
             margin-top: 1em;
             margin-bottom: 1em;
             padding: 0;
+            transition: 0.2s;
         }
+
+        #screenshots .image:hover {
+            transform: scale(1.02);
+        }
+
 
     #finalMessage {
         width: 100%;

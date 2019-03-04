@@ -1,4 +1,6 @@
-﻿<link rel="stylesheet" type="text/css" href="Home.css" media="screen" />
+﻿<link rel="stylesheet" type="text/css" href="css/Home.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/lightbox.min.css" media="screen" />
+<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
 
 <header>
     <a href="index.html">
@@ -72,10 +74,16 @@
 
         <div id="screenshots">
             <h1>Screenshots</h1>
-            <img src="https://res.cloudinary.com/dyjbpwees/image/upload/v1551612671/MenuDemo.png" alt="screenshot" class="screenshot">
-            <img src="https://res.cloudinary.com/dyjbpwees/image/upload/v1551612668/EnterNameDemo.png" alt="screenshot" class="screenshot">
-            <img src="https://res.cloudinary.com/dyjbpwees/image/upload/v1551612673/FirstLookDemo.png" alt="screenshot" class="screenshot">
-            <h2>To view more, visit our <a href="#">Gallery</a></h2>
+            <a href="https://res.cloudinary.com/dyjbpwees/image/upload/v1551612671/MenuDemo.png" data-lightbox="screenshots">
+                <img class="image" src="https://res.cloudinary.com/dyjbpwees/image/upload/v1551612671/MenuDemo.png" alt="screenshot1" class="screenshot">
+            </a>
+            <a href="https://res.cloudinary.com/dyjbpwees/image/upload/v1551612668/EnterNameDemo.png" data-lightbox="screenshots">
+                <img class="image" src="https://res.cloudinary.com/dyjbpwees/image/upload/v1551612668/EnterNameDemo.png" alt="screenshot2" class="screenshot">
+            </a>
+            <a href="https://res.cloudinary.com/dyjbpwees/image/upload/v1551612673/FirstLookDemo.png" data-lightbox="screenshots">
+                <img class="image" src="https://res.cloudinary.com/dyjbpwees/image/upload/v1551612673/FirstLookDemo.png" alt="screenshot3" class="screenshot">
+            </a>    
+                <h2>To view more, visit our <a href="#">Gallery</a></h2>
         </div>
 
         <div id="finalMessage">
