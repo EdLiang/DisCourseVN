@@ -1,0 +1,295 @@
+﻿:root {
+    --background: #a875e9;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: cambria;
+    background-color: #444;
+}
+
+/*Nav Style*/
+header {
+    background: var(--background);
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: 99;
+}
+
+.logo {
+    width: 15em;
+    padding: 0.5em;
+}
+
+.toggle-nav {
+    display: none;
+}
+
+.toggle-nav-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+    .toggle-nav-label span,
+    .toggle-nav-label span::before,
+    .toggle-nav-label span::after {
+        display: block;
+        background: white;
+        height: 2px;
+        width: 2em;
+        border-radius: 2px;
+        position: relative;
+    }
+
+        .toggle-nav-label span::before,
+        .toggle-nav-label span::after {
+            content: '';
+            position: absolute;
+        }
+
+        .toggle-nav-label span::before {
+            bottom: 8px;
+        }
+
+        .toggle-nav-label span::after {
+            top: 8px;
+        }
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+
+        nav a:hover {
+            color: #666;
+        }
+
+.toggle-nav:checked ~ nav {
+    transform: scale(1,1);
+}
+
+    .toggle-nav:checked ~ nav a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 200ms;
+    }
+
+@media screen and (min-width: 800px) {
+    .toggle-nav-label {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 0.5fr auto minmax(600px, 3fr) 0.5fr
+    }
+
+    .logo {
+        grid-column: 2 / 3;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 3em;
+            margin-bottom: 0;
+        }
+
+        nav a {
+            opacity: 1;
+            position: relative;
+        }
+
+            nav a::before {
+                content: '';
+                display: block;
+                height: 5px;
+                background: #666;
+                position: absolute;
+                top: -0.75em;
+                left: 0;
+                right: 0;
+                transform: scale(0, 1);
+                transition: transform ease-in-out 200ms;
+            }
+
+            nav a:hover::before {
+                transform: scale(1, 1);
+            }
+}
+
+/* About Us Style */
+
+@media screen and (min-width: 800px) {
+    .background {
+        position: Fixed;
+        z-index: 1;
+        font-size: 2vw;
+        color: white;
+        width: 100%;
+        height: 100%;
+    }
+
+        .background h1 {
+            writing-mode: vertical-rl;
+            font-size: 10vw;
+            z-index: 1;
+            margin-left: 3%;
+            padding-top: 2%;
+        }
+
+    #test {
+        text-align: center;
+        max-width: 80%;
+        height: 25vw;
+        margin-left: 17vw;
+        border-style: solid;
+        margin-top: 2vw;
+        margin-bottom: 0;
+        z-index: 1;
+    }
+
+        #test #mission {
+            text-align: right;
+            font-size: 3vw;
+            color: white;
+        }
+
+
+    #parallex {
+        position: relative;
+        height: auto;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        margin-top: -3%;
+        z-index: 2;
+    }
+
+    #test2 {
+        text-align: center;
+        max-width: 80%;
+        height: 25vw;
+        margin-left: 17vw;
+        border-style: solid;
+        margin-top: -23vw;
+        margin-bottom: 0;
+        z-index: 1;
+    }
+
+    #theTeam {
+        text-align: right;
+        font-size: 3vw;
+        padding-right: 1em;
+        margin-top: 0;
+        color: white;
+    }
+}
+
+/* About Us Windowed Style */
+
+@media screen and (max-aspect-ratio: 7/4) {
+    .background {
+        position: Fixed;
+        padding-left: 1.5vw;
+        z-index: 3;
+        font-size: 2vw;
+        color: white;
+        width: 100%;
+        height: 100%;
+    }
+
+    #test {
+        text-align: center;
+        max-width: 80%;
+        height: 25vw;
+        margin-left: 17vw;
+        border-style: solid;
+        margin-top: 2vw;
+        margin-bottom: 0;
+        z-index: 1;
+    }
+
+        #test #mission {
+            text-align: right;
+            font-size: 3vw;
+            color: white;
+        }
+
+
+    #parallex {
+        display: none;
+        position: relative;
+        height: auto;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        margin-top: -3%;
+        z-index: 2;
+    }
+
+    #test2 {
+        text-align: center;
+        max-width: 80%;
+        height: 25vw;
+        margin-left: 17vw;
+        border-style: solid;
+        margin-top: -23vw;
+        margin-bottom: 0;
+        z-index: 1;
+    }
+
+    #theTeam {
+        text-align: right;
+        font-size: 3vw;
+        padding-right: 1em;
+        color: white;
+        margin-top: 0;
+    }
+}
