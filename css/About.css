@@ -267,6 +267,11 @@ nav {
 /* About Us Windowed Style */
 
 @media screen and (max-aspect-ratio: 7/4) {
+    header {
+        position: fixed;
+        margin-top: -2vw;
+    }
+    
     .background {
         position: Fixed;
         padding-left: 1.5vw;
@@ -278,7 +283,12 @@ nav {
         background: url(https://res.cloudinary.com/dyjbpwees/image/upload/v1551668890/htmlBackground2.png)
     }
 
+    .logo {
+        margin-left: 6vw;
+    }
+
         .background h1 {
+            display: none;
             text-shadow: 2px 2px 5px #FFFF;
         }
 
@@ -286,17 +296,18 @@ nav {
         text-align: center;
         max-width: 80%;
         height: 25vw;
-        margin-left: 17vw;
+        margin-left: 10vw;
         margin-top: 2vw;
         margin-bottom: 0;
         z-index: 1;
+
     }
 
         #test #mission {
-            margin-top: 0;
-            text-align: right;
+            padding-top: 10vw;
+            text-align: center;
             margin-bottom: 0;
-            font-size: 3vw;
+            font-size: 5vw;
             color: #787878;
             text-shadow: 2px 2px 5px #FFFF;
         }
@@ -304,9 +315,10 @@ nav {
         #test p {
             color: #787878;
             text-align: left;
-            font-size: 2vw;
+            font-size: 3.5vw;
             text-shadow: 2px 2px 7px #FFFF;
             font-weight: bold;
+            margin-top: 7vw;
         }
 
 
@@ -325,7 +337,7 @@ nav {
         text-align: center;
         max-width: 80%;
         height: 25vw;
-        margin-left: 17vw;
+        margin-left: 13vw;
         margin-top: 1vw;
         margin-bottom: 0;
         z-index: 1;
@@ -333,23 +345,26 @@ nav {
     }
 
         #test2 h1 {
+            margin-top: 10em;
             color: #787878;
+            font-size: 3em;
         }
 
         #test2 h2 {
             margin-top: 3em;
             color: #787878;
+            font-size: 1.8em;
         }
 
         #test2 p {
             color: #787878;
             text-align: left;
-            font-size: 1.5em;
+            font-size: 2.5em;
         }
 
         #test2 #specialThanks {
             margin-top: 1em;
-            font-size: 1em;
+            font-size: 2em;
             text-align: center;
         }
 
