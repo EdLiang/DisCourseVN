@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: cambria;
-    background-color: #444;
+    background-color: #333;
 }
 
 /*Nav Style*/
@@ -24,6 +24,7 @@ header {
 .logo {
     width: 15em;
     padding: 0.5em;
+    margin-left: 10em;
 }
 
 .toggle-nav {
@@ -182,6 +183,7 @@ nav {
             z-index: 1;
             margin-left: 3%;
             padding-top: 2%;
+            text-shadow: 2px 2px 5px #000000;
         }
 
     #test {
@@ -189,18 +191,26 @@ nav {
         max-width: 80%;
         height: 25vw;
         margin-left: 17vw;
-        border-style: solid;
         margin-top: 2vw;
         margin-bottom: 0;
         z-index: 1;
     }
 
         #test #mission {
+            margin-top: 0;
+            margin-bottom: 0;
             text-align: right;
-            font-size: 3vw;
+            font-size: 5vw;
             color: white;
+            text-shadow: 2px 2px 5px #000000;
         }
 
+        #test p {
+            color: white;
+            text-align: left;
+            font-size: 2vw;
+            text-shadow: 2px 2px 7px #000000;
+        }
 
     #parallex {
         position: relative;
@@ -208,7 +218,7 @@ nav {
         width: 100%;
         min-width: 100%;
         max-width: 100%;
-        margin-top: -3%;
+        margin-top: 0%;
         z-index: 2;
     }
 
@@ -217,18 +227,40 @@ nav {
         max-width: 80%;
         height: 25vw;
         margin-left: 17vw;
-        border-style: solid;
         margin-top: -23vw;
         margin-bottom: 0;
         z-index: 1;
+        text-shadow: 2px 2px 7px #000000;
     }
+
+        #test2 h1 {
+            color: white;
+        }
+
+        #test2 h2 {
+            margin-top: 3em;
+            color: white;
+        }
+
+        #test2 #specialThanks {
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        #test2 p {
+            color: white;
+            text-align: left;
+            font-size: 2vw;
+        }
 
     #theTeam {
         text-align: right;
-        font-size: 3vw;
+        font-size: 5vw;
         padding-right: 1em;
+        color: black;
         margin-top: 0;
         color: white;
+        text-shadow: 2px 2px 7px #000000;
     }
 }
 
@@ -238,28 +270,43 @@ nav {
     .background {
         position: Fixed;
         padding-left: 1.5vw;
-        z-index: 3;
+        z-index: -1;
         font-size: 2vw;
-        color: white;
+        color: #787878;
         width: 100%;
         height: 100%;
+        background: url(https://res.cloudinary.com/dyjbpwees/image/upload/v1551668890/htmlBackground2.png)
     }
+
+        .background h1 {
+            text-shadow: 2px 2px 5px #FFFF;
+        }
 
     #test {
         text-align: center;
         max-width: 80%;
         height: 25vw;
         margin-left: 17vw;
-        border-style: solid;
         margin-top: 2vw;
         margin-bottom: 0;
         z-index: 1;
     }
 
         #test #mission {
+            margin-top: 0;
             text-align: right;
+            margin-bottom: 0;
             font-size: 3vw;
-            color: white;
+            color: #787878;
+            text-shadow: 2px 2px 5px #FFFF;
+        }
+
+        #test p {
+            color: #787878;
+            text-align: left;
+            font-size: 2vw;
+            text-shadow: 2px 2px 7px #FFFF;
+            font-weight: bold;
         }
 
 
@@ -279,17 +326,40 @@ nav {
         max-width: 80%;
         height: 25vw;
         margin-left: 17vw;
-        border-style: solid;
-        margin-top: -23vw;
+        margin-top: 1vw;
         margin-bottom: 0;
         z-index: 1;
+        text-shadow: 2px 2px 7px #FFFF;
     }
 
+        #test2 h1 {
+            color: #787878;
+        }
+
+        #test2 h2 {
+            margin-top: 3em;
+            color: #787878;
+        }
+
+        #test2 p {
+            color: #787878;
+            text-align: left;
+            font-size: 1.5em;
+        }
+
+        #test2 #specialThanks {
+            margin-top: 1em;
+            font-size: 1em;
+            text-align: center;
+        }
+
     #theTeam {
+        display: none;
         text-align: right;
         font-size: 3vw;
         padding-right: 1em;
-        color: white;
-        margin-top: 0;
+        color: #787878;
+        margin-top: 2em;
+        text-shadow: 2px 2px 5px #FFFF;
     }
 }

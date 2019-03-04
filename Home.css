@@ -23,6 +23,7 @@ header {
 .logo {
     width: 15em;
     padding: 0.5em;
+    margin-left: 10em;
 }
 
 .toggle-nav {
