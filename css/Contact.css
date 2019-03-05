@@ -396,7 +396,8 @@ nav {
         font-family: tahoma;
         font-weight: bold;
         background-color: #777;
-        color: #white;
+        color: white;
+        -webkit-appearance: none;
     }
 
     #otherContactInfo {
@@ -448,6 +449,7 @@ nav {
             font-family: tahoma;
             font-weight: bold;
             color: white;
+            -webkit-appearance: none;
         }
 
     #otherContactInfo2 {
@@ -705,6 +707,7 @@ nav {
         font-weight: bold;
         background-color: #777;
         color: white;
+        -webkit-appearance: none;
     }
 
     #otherContactInfo {
