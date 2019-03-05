@@ -23,6 +23,7 @@ header {
 .logo {
     width: 15em;
     padding: 0.5em;
+    margin-left: 10em;
 }
 
 .toggle-nav {
@@ -165,7 +166,7 @@ nav {
 
 /* Contact Us Style */
 
-@media screen and (max-width: 800px) {
+@media (max-width: 799px) {
     .container {
         position: relative;
         width: 100%;
@@ -450,6 +451,8 @@ nav {
             font-weight: bold;
             color: white;
             -webkit-appearance: none;
+            width: 5em;
+            height: 2em;
         }
 
     #otherContactInfo2 {
@@ -476,7 +479,7 @@ nav {
 
 
 
-@media screen and (min-width: 800px) {
+@media (min-width: 800px) {
     .container {
         position: relative;
         width: 100%;
@@ -708,6 +711,8 @@ nav {
         background-color: #777;
         color: white;
         -webkit-appearance: none;
+        width: 6em;
+        height: 4em;
     }
 
     #otherContactInfo {

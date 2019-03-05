@@ -1,0 +1,266 @@
+﻿:root {
+    --background: #a875e9;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: cambria;
+    background: url(https://res.cloudinary.com/dyjbpwees/image/upload/v1551668794/htmlBackground.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*Nav Style*/
+header {
+    background: var(--background);
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: 99;
+}
+
+.logo {
+    width: 15em;
+    padding: 0.5em;
+    margin-left: 10em;
+}
+
+.toggle-nav {
+    display: none;
+}
+
+.toggle-nav-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+    .toggle-nav-label span,
+    .toggle-nav-label span::before,
+    .toggle-nav-label span::after {
+        display: block;
+        background: white;
+        height: 2px;
+        width: 2em;
+        border-radius: 2px;
+        position: relative;
+    }
+
+        .toggle-nav-label span::before,
+        .toggle-nav-label span::after {
+            content: '';
+            position: absolute;
+        }
+
+        .toggle-nav-label span::before {
+            bottom: 8px;
+        }
+
+        .toggle-nav-label span::after {
+            top: 8px;
+        }
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+
+        nav a:hover {
+            color: #666;
+        }
+
+.toggle-nav:checked ~ nav {
+    transform: scale(1,1);
+}
+
+    .toggle-nav:checked ~ nav a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 200ms;
+    }
+
+@media screen and (min-width: 800px) {
+    .toggle-nav-label {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 0.5fr auto minmax(600px, 3fr) 0.5fr
+    }
+
+    .logo {
+        grid-column: 2 / 3;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 3em;
+            margin-bottom: 0;
+        }
+
+        nav a {
+            opacity: 1;
+            position: relative;
+        }
+
+            nav a::before {
+                content: '';
+                display: block;
+                height: 5px;
+                background: #666;
+                position: absolute;
+                top: -0.75em;
+                left: 0;
+                right: 0;
+                transform: scale(0, 1);
+                transition: transform ease-in-out 200ms;
+            }
+
+            nav a:hover::before {
+                transform: scale(1, 1);
+            }
+}
+
+/* Title CSS
+===================================*/
+
+.title {
+    text-align: center;
+    background-color: rgba(33, 33, 33, 0.5);
+    max-width: 85%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px #333;
+}
+
+    .title h1 {
+        color: white;
+        text-shadow: 0px 0px 15px #000, 0px 0px 25px #000;
+        font-size: 10rem;
+        margin: 0 auto;
+    }
+
+    .title h2 {
+        color: white;
+        text-shadow: 0px 0px 15px #000, 0px 0px 25px #000;
+        font-size: 4em;
+    }
+
+    .title p {
+        color: white;
+        text-shadow: 0px 0px 15px #000, 0px 0px 25px #000;
+        font-size: 4em;
+        margin-bottom: 0;
+    }
+
+        .title p span {
+            display: block;
+            font-size: 0.8em;
+            padding: 1em;
+        }
+
+    .title a {
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+    }
+
+        .title a:hover,
+        .title a:focus {
+            color: #777;
+            text-shadow: 0px 0px 5px #FFF, 0px 0px 10px #FFF;
+        }
+
+@media (max-width: 60rem) {
+    .title {
+        text-align: center;
+        background-color: rgba(33, 33, 33, 0.5);
+        max-width: 85%;
+        margin: 0 auto;
+        box-shadow: 0px 0px 15px #333;
+    }
+
+        .title h1 {
+            text-shadow: 0px 0px 15px #000, 0px 0px 25px #000;
+            font-size: 5.5rem;
+            margin: 0 auto;
+            max-width: 90vw;
+        }
+
+        .title h2 {
+            color: white;
+            text-shadow: 0px 0px 15px #000, 0px 0px 25px #000;
+            font-size: 3.7em;
+        }
+
+        .title p {
+            color: white;
+            text-shadow: 0px 0px 15px #000, 0px 0px 25px #000;
+            font-size: 4em;
+            margin-bottom: 0;
+        }
+
+            .title p span {
+                display: block;
+                font-size: 0.8em;
+                padding: 1em;
+            }
+
+        .title a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+            .title a:hover,
+            .title a:focus {
+                color: #777;
+                text-shadow: 0px 0px 5px #FFF, 0px 0px 10px #FFF;
+            }
+}
