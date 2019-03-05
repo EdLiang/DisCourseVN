@@ -1,56 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title> Contact </title>
-    <meta charset="utf-8">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+﻿<link rel="stylesheet" type="text/css" href="css/Contact.css" media="screen" />
 
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
- 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-		<link rel="stylesheet" href="css/flaticon.css"> 
-	</head>
-  <body>
+<header>
+    <a href="index.html">
+        <img src="https://res.cloudinary.com/dyjbpwees/image/upload/v1551517900/logoPurple.png" alt="DisCourse" class="logo">
+    </a>
+    <input type="checkbox" id="toggle-nav" class="toggle-nav">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Donations</a></li>
+            <li><a href="contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <label for="toggle-nav" class="toggle-nav-label">
+        <span></span>
+    </label>
+</header>
 
-		<div id="navbar-inclusion"></div>
+<div class="container" id="firstContainer">
+    <h1>Contact Us</h1>
+    <p id="welcome">DisCourse would like to hear from you!</p><p>If you have any questions, feedback, or any comment, feel free to contact us. <br>Remember, DisCourse Visual Novel is a sub-branch of DisCourse.<br> You can access our official website and other resources pertaining to DisCourse below. <br> If you would like to send us a quick message or contact the sub branch directly, click the arrow below to jump to our quick-contact form. </p>
+    <a href="#thirdContainer"><img src="https://res.cloudinary.com/dyjbpwees/image/upload/v1551763968/downArrow.png"></a>
+</div>
 
-		<div id="main">
-			
-		</div>
-				
-    
-	</body>
-	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/bootstrap-datepicker.js"></script>
-	<script src="js/jquery.timepicker.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-	<script src="js/google-map.js"></script>
+<div class="container" id="secondContainer">
+    <h1>Discover Discourse</h1>
+    <div id="discourseResources">
+        <div id="officialWebsite">
+            <h1>Official Discourse Website</h1>
+            <h2>Coming Soon!</h2>
+        </div>
+        <div id="officialResources">
+            <h1>Youtube Channel</h1>
+            <a target="_blank" href="https://www.youtube.com/channel/UCcI-YjpyR_7boyR3uN3eRlA"><img id="youtube" src="https://res.cloudinary.com/dyjbpwees/image/upload/v1551766386/yt_logo_rgb_light.png"></a>
+            <p>Note: DisCourse only has one youtube channel. That means and videos for DisCourse Visual Novel will also be uploaded here.</p>
+            <h1>Patreon</h1>
+            <h2>Coming Soon!</h2>
+        </div>
+    </div>
+</div>
 
-	<script src="js/main.js"></script>
-	<script src="js/navbar.js"></script>
+<div class="container" id="thirdContainer">
+    <div id="formsOfContact">
+        <div id="quick-contact">
+            <h1 id="formTitle">Contact Form</h1>
+            <div id="noTitle">
+                <form id="contact-form">
+                    <label id="name-label">
+                        <p id="survey-text"> * Your Name: </p>
+                        <input type="text" id="name" placeholder="Enter your first name" required>
+                    </label>
 
+                    <label id="email-label">
+                        <p id="survey-text"> * Email: </p>
+                        <input type="email" id="email" placeholder="Enter your email" required></p>
+                    </label>
 
-</html>
+                    <label id="subject-label">
+                        <p id="survey-text"> &nbsp;&nbsp;&nbsp;Subject: </p>
+                        <input type="text" id="subject" placeholder="Enter Subject title">
+                    </label>
+
+                    <label id="feedback">
+                        <p id="feedback-text">* Your Message</p>
+                        <textarea id="text-area" placeholder="Enter Message Here"> </textarea>
+                    </label>
+
+                    <button id="submit" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="otherContactInfo">
+            <p> You may also email use at : </p>
+            <p> DisCourseVN@gmail.com </p>
+        </div>
+    </div>
+</div>
+
+<div id="quick-contact2">
+    <h1 id="formTitle2">Contact Form</h1>
+    <div id="noTitle">
+        <form id="contact-form">
+            <label id="name-label">
+                <p id="survey-text"> * Your Name: </p>
+                <input type="text" id="name" placeholder="Enter your first name" required>
+            </label>
+
+            <label id="email-label">
+                <p id="survey-text"> * Email: </p>
+                <input type="email" id="email" placeholder="Enter your email" required></p>
+            </label>
+
+            <label id="subject-label">
+                <p id="survey-text"> &nbsp;&nbsp;&nbsp;Subject: </p>
+                <input type="text" id="subject" placeholder="Enter Subject title">
+            </label>
+
+            <label id="feedback">
+                <p id="feedback-text">* Your Message</p>
+                <textarea id="text-area" placeholder="Enter Message Here"> </textarea>
+            </label>
+
+            <button id="submit2" type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+<div id="otherContactInfo2">
+    <p> You may also email use at : </p>
+    <p> DisCourseVN@gmail.com </p>
+</div>
