@@ -290,7 +290,7 @@ nav {
 
         .background h1 {
             display: none;
-            text-shadow: 2px 2px 5px #FFFF;
+            text-shadow: 2px 2px 5px #FFF;
         }
 
     #test {
@@ -310,14 +310,14 @@ nav {
             margin-bottom: 0;
             font-size: 5vw;
             color: #787878;
-            text-shadow: 2px 2px 5px #FFFF;
+            text-shadow: 2px 2px 5px #FFF;
         }
 
         #test p {
             color: #787878;
             text-align: left;
             font-size: 3.5vw;
-            text-shadow: 2px 2px 7px #FFFF;
+            text-shadow: 2px 2px 7px #FFF;
             font-weight: bold;
             margin-top: 7vw;
         }
@@ -342,7 +342,7 @@ nav {
         margin-top: 1vw;
         margin-bottom: 0;
         z-index: 1;
-        text-shadow: 2px 2px 7px #FFFF;
+        text-shadow: 2px 2px 7px #FFF;
     }
 
         #test2 h1 {
@@ -376,6 +376,6 @@ nav {
         padding-right: 1em;
         color: #787878;
         margin-top: 2em;
-        text-shadow: 2px 2px 5px #FFFF;
+        text-shadow: 2px 2px 5px #FFF;
     }
 }
