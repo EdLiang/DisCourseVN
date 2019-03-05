@@ -432,6 +432,8 @@ nav {
         }
 
         #quick-contact2 #submit2 {
+            background-color: #999;
+            color: black;
             border: none;
             display: block;
             position: relative;
