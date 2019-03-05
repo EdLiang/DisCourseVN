@@ -395,6 +395,8 @@ nav {
         box-shadow: 0px 0px 8px #222;
         font-family: tahoma;
         font-weight: bold;
+        background-color: #777;
+        color: #white;
     }
 
     #otherContactInfo {
@@ -701,6 +703,8 @@ nav {
         box-shadow: 0px 0px 8px #222;
         font-family: tahoma;
         font-weight: bold;
+        background-color: #777;
+        color: white;
     }
 
     #otherContactInfo {
