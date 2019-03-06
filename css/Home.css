@@ -9,6 +9,7 @@
 body {
     margin: 0;
     font-family: cambria;
+    min-width: 100vw;
 }
 
 /*Nav Style*/
